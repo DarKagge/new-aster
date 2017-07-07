@@ -1,75 +1,537 @@
 @import "bourbon";
 @import "vars.scss";
+@import "../libs/lightslider/dist/css/lightslider.min.css";
+@import "../libs/magnific-popup/dist/magnific-popup.css";
+$hamburger-hover-opacity: 1;
+$hamburger-types: (elastic, elastic-r);
+$hamburger-layer-color: #fff;
+@import "../app/libs/css-hamburgers/_sass/hamburgers/hamburgers.scss";
 
-*::-webkit-input-placeholder{
-    color: #666;
-    opacity: 1;
+
+
+
+
+
+.why-go{
+  background-color: #f7f8f8;
+  border-bottom: 1px solid #ebebeb;
+  @if $adaptive == true{
+    @media (max-width: 1025px){
+      height: 647px;
+    }
+  }
+  @if $adaptive == true{
+    @media (max-width: 780px){
+      height: auto;
+    }
+  }
 }
-
-*:-moz-placeholder{
-    color: #666;
-    opacity: 1;
-}
-
-*::-moz-placeholder{
-    color: #666;
-    opacity: 1;
-}
-
-*:-ms-input-placeholder{
-    color: #666;
-    opacity: 1;
-}
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid{
-    color: #666;
-}
-
-body input:required:valid,
-body textarea:required:valid{
-    color: #666;
-}
-
-//Custom Styles Here
-
-footer{
-    background-color: #000000;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 11px;
-    padding-bottom: 2px;
-    ul{
-        margin-top: 19px;
-        float: left;
-        padding-left: 0;
-        padding-right: 0;
-        li{
-            float: left;
-            margin-right: 20px;
-            a{
-                text-decoration: none;
-                color: #616161;
-                font-size: 16px;
-            }
-            a:hover{
-                text-decoration: none;
-                color: #fff;
-            }
+.title-go{
+  position: absolute;
+  left: 29px;
+  top: 200px;
+  width: 136px;
+  min-height: 222px;
+  background-image: url("../img/why.png");
+  background-repeat: no-repeat;
+  h2{
+    font-size:40px;
+    font-weight:300;
+    color: #263139;
+    line-height: 45px;
+    text-transform: uppercase;
+    padding-top: 54px;
+    position: relative;
+    &:after{
+      position: absolute;
+      left: -19px;
+      top: 32px;
+      content: '';
+      background-image: url("../img/ygol.png");
+      width: 30px;
+      height: 29px;
+    }
+  }
+  b{
+    font-weight: bold;
+  }
+  @if $adaptive == true{
+    @media (max-width: 1025px){
+      position: relative;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      top: auto;
+      left: auto;
+      min-height: inherit;
+      background-image: none;
+      h2{
+        display: inline-block;
+        padding-top: 90px;
+        &:after{
+          top: 80px;
         }
+      }
+      b{
+        font-weight:300;
+      }
+      br{
+        display: none;
+      }
     }
-    .gs{
-        float: right;
-        margin: 9px;
-        margin-right: 15px;
-        display: block;
+  }
+  @if $adaptive == true{
+    @media (max-width: 370px){
+      h2{
+        font-size: 32px;
+        line-height: 32px;
+      }
     }
-    .gs:visited, .gs:active{
-        text-decoration:none;
-    }
+  }
 }
+
+.items-go{
+  height: 647px;
+  margin-top: 68px;
+  position: relative;
+  margin-left: 119px;
+  li{
+    position: absolute;
+    width: 252px;
+    height: 252px;
+    background-image: url("../img/item-go.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    img{
+      padding-top: 60px;
+      padding-bottom: 36px;
+    }
+    h2{
+      font-size:24px;
+      line-height: 24px;
+      font-weight:bold;
+    }
+    h3{
+      font-size:18px;
+      line-height: 18px;
+      font-weight:bold;
+    }
+    b{
+      display: block;
+      font-size:36px;
+      line-height: 36px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 16px;
+      font-weight: 300;
+    }
+    &:first-child{
+      left: 0;
+      top: 0;
+    }
+    &:nth-child(2){
+      left: 256px;
+    }
+    &:nth-child(3){
+      left: 512px;
+      h3{
+        width: 170px;
+        margin: 0 auto;
+      }
+      p{
+        display: initial;
+        padding-left: 5px;
+      }
+    }
+    &:nth-child(4){
+      top: 128px;
+      left: 128px;
+    }
+    &:nth-child(5){
+      top: 128px;
+      left: 384px;
+    }
+    &:nth-child(6){
+      top: 128px;
+      left: 640px;
+    }
+    &:nth-child(7){
+      top: 255px;
+      left: 0px;
+    }
+    &:nth-child(8){
+      top: 255px;
+      left: 256px;
+    }
+    &:nth-child(9){
+      top: 255px;
+      left: 512px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1025px){
+      margin-top: 57px;
+      height: auto;
+      li{
+        background-image: url("../img/m-item-go.png");
+        width: 204px;
+        height: 204px;
+        img{
+          padding-top: 37px;
+          padding-bottom: 20px;
+        }
+        &:nth-child(2){
+          left: 209px;
+        }
+        &:nth-child(3){
+          left: 418px;
+        }
+        &:nth-child(4){
+          top:104px;
+          left: 104px;
+        }
+        &:nth-child(5){
+          top:104px;
+          left: 314px;
+          h2{
+            font-size: 18px;
+            line-height: 18px;
+          }
+        }
+        &:nth-child(6){
+          top:104px;
+          left: 521px;
+        }
+        &:nth-child(7){
+          top:207px;
+          left: 0px;
+        }
+        &:nth-child(8){
+          top:207px;
+          left: 209px;
+          p{
+            padding-bottom: 5px;
+          }
+        }
+        &:nth-child(9){
+          top:207px;
+          left: 418px;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 860px){
+      margin-top: 57px;
+      margin-left: 38px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 780px){
+      margin-left: 0px;
+      ul{
+        text-align: center;
+      }
+      li{
+        position: relative;
+        top: auto !important;
+        left: auto !important;
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px 22px;
+        &:nth-child(3){
+          position: absolute;
+          top: 114px !important;
+          left: 50% !important;
+          margin-left: -102px;
+
+        }
+        &:nth-child(6){
+          position: absolute;
+          top: 340px !important;
+          left: 50% !important;
+          margin-left: -102px;
+
+        }
+        &:nth-child(9){
+          top: -115px !important;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 529px){
+      margin-left: 0px;
+      ul{
+        text-align: center;
+      }
+      li{
+        margin: 10px 10px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 481px){
+      margin-left: 0px;
+      ul{
+        text-align: center;
+      }
+      li{
+        margin: 10px 0px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 441px){
+      margin-left: 0px;
+      ul{
+        text-align: center;
+      }
+      li{
+        margin: 10px 0px;
+        &:nth-child(3){
+          position: relative;
+          left: auto !important;
+          margin-left: 0;
+          top: auto !important;
+        }
+        &:nth-child(6){
+          position: relative;
+          left: auto !important;
+          margin-left: 0;
+          top: auto !important;
+        }
+        &:nth-child(9){
+          position: relative;
+          left: auto !important;
+          margin-left: 0;
+          top: auto !important;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+.mobile-br{
+  display: none;
+  @if $adaptive == true {
+    @media (max-width: 1025px){
+      display: block;
+    }
+  }
+}
+
+
+.if-not-mob{
+  display: block;
+  @if $adaptive == true {
+    @media (max-width: 1025px){
+      display: none;
+    }
+  }
+}
+
+
+
+.presence{
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      margin-bottom: 70px;
+      .geen-buttons{
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        margin-left: -154px;
+      }
+    }
+  }
+
+  .title-go{
+      position: relative;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      top: auto;
+      left: auto;
+      min-height: inherit;
+      background-image: none;
+      h2{
+        display: inline-block;
+        padding-top: 90px;
+        &:after{
+          top: 80px;
+        }
+      }
+      p{
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 20px;
+        color: #7f8890;
+      }
+      h3{
+        color: #7f8890;
+        font-size:24px;
+        line-height: 24px;
+        padding-top: 5px;
+      }
+    @if $adaptive == true {
+      @media (max-width: 810px){
+        h2{
+          &:after{
+            left: -9px;
+          }
+        }
+      }
+    }
+    @if $adaptive == true {
+      @media (max-width: 802px){
+        h2{
+          &:after{
+            left: 55px;
+          }
+        }
+      }
+    }
+
+  }
+  .geen-buttons{
+    margin-top: 30px;
+    text-align: center;
+  }
+  @if $adaptive == true {
+    @media (max-width: 770px){
+      .title-go{
+        h2{
+          &:after{
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 656px){
+      margin-bottom: 0;
+      .title-go{
+        h2{
+          &:after{
+            left: 0px;
+          }
+        }
+      }
+      .geen-buttons{
+        bottom: 50px;
+      }
+      .video-book{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+.video-book{
+  max-width: 779px;
+  margin: 31px auto;
+  text-align: center;
+  position: relative;
+  background-image: url("../img/book.png");
+  height: 413px;
+  img{
+    padding-top: 28px;
+  }
+  @if $adaptive == true {
+    @media (max-width: 799px){
+      background-size: 100%;
+      background-repeat: no-repeat;
+      img{
+        padding: 23px 20px;
+        width: 75%;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 600px){
+      img{
+        padding: 20px 20px;
+        width: 76.5%;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 530px){
+      img{
+        width: 76.5%;
+      }
+    }
+  }
+
+
+}
+
+
+
+.organize{
+  background-color: #f1f2f2;
+
+  .title-go{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    top: auto;
+    left: auto;
+    min-height: inherit;
+    background-image: none;
+    h2{
+      display: inline-block;
+      padding-top: 90px;
+      &:after{
+        top: 80px;
+      }
+    }
+    @if $adaptive == true {
+      @media (max-width: 810px){
+        h2{
+          &:after{
+            left: -9px;
+          }
+        }
+      }
+    }
+    @if $adaptive == true {
+      @media (max-width: 802px){
+        h2{
+          &:after{
+            left: 55px;
+          }
+        }
+      }
+    }
+    @if $adaptive == true {
+      @media (max-width: 656px){
+        h2{
+          &:after{
+            left: 0px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+.right-organize{
+  text-align: center;
+}
+
 
 
 //ALWAYS END
-@import "media.scss";
 @import "sketches.scss";
