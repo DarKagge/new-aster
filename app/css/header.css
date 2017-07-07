@@ -74,7 +74,7 @@ header {
 
 .head-menu {
   display: inline-block;
-  padding-left: 24.5px;
+  padding-left: 180.5px;
   height: 60px; }
   .head-menu li {
     float: left; }
@@ -93,10 +93,49 @@ header {
     .head-menu a:hover {
       border-bottom: 2px solid #ff8a00;
       background-color: #282c33; }
-  @media (max-width: 1023px) {
+  @media (max-width: 1179px) {
     .head-menu {
-      padding-left: 10px; } }
-  @media (max-width: 1003px) {
+      padding-left: 170.5px; } }
+  @media (max-width: 1169px) {
+    .head-menu {
+      padding-left: 160.5px; } }
+  @media (max-width: 1159px) {
+    .head-menu {
+      padding-left: 150.5px; } }
+  @media (max-width: 1149px) {
+    .head-menu {
+      padding-left: 140.5px; } }
+  @media (max-width: 1139px) {
+    .head-menu {
+      padding-left: 130.5px; } }
+  @media (max-width: 1129px) {
+    .head-menu {
+      padding-left: 100.5px; } }
+  @media (max-width: 1099px) {
+    .head-menu {
+      padding-left: 80.5px; } }
+  @media (max-width: 1079px) {
+    .head-menu {
+      padding-left: 70.5px; } }
+  @media (max-width: 1069px) {
+    .head-menu {
+      padding-left: 60.5px; } }
+  @media (max-width: 1059px) {
+    .head-menu {
+      padding-left: 50.5px; } }
+  @media (max-width: 1049px) {
+    .head-menu {
+      padding-left: 40.5px; } }
+  @media (max-width: 1039px) {
+    .head-menu {
+      padding-left: 30.5px; } }
+  @media (max-width: 1029px) {
+    .head-menu {
+      padding-left: 20.5px; } }
+  @media (max-width: 1024px) {
+    .head-menu {
+      padding-left: 10.5px; } }
+  @media (max-width: 1009px) {
     .head-menu {
       padding-left: 25px; }
       .head-menu a {
@@ -150,7 +189,7 @@ body .hamburger-inner::after {
   margin-top: 20px;
   display: inline-block;
   vertical-align: top;
-  margin-left: 49px; }
+  margin-left: 0px; }
   .left-date li {
     margin-bottom: 10px; }
   .left-date img {
@@ -164,6 +203,12 @@ body .hamburger-inner::after {
     font-weight: bold;
     line-height: 24px;
     padding-left: 14px; }
+  @media (max-width: 1024px) {
+    .left-date {
+      margin-top: 20px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 49px; } }
   @media (max-width: 991px) {
     .left-date {
       display: block;
@@ -227,7 +272,7 @@ body .hamburger-inner::after {
 
 .tticket {
   margin-top: 21px;
-  margin-right: 60px; }
+  margin-right: 0px; }
   .tticket a {
     display: block;
     border: 2px solid #ffb100;
@@ -254,6 +299,10 @@ body .hamburger-inner::after {
       background-image: url("../img/plus.png");
       width: 17px;
       height: 17px; }
+  @media (max-width: 1024px) {
+    .tticket {
+      margin-top: 21px;
+      margin-right: 60px; } }
   @media (max-width: 991px) {
     .tticket {
       position: absolute;

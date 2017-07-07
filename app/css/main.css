@@ -555,8 +555,11 @@ a {
   clear: both; }
 
 .inner {
-  max-width: 1024px;
+  max-width: 1180px;
   margin: 0 auto; }
+  @media (max-width: 1024px) {
+    .inner {
+      max-width: 1024px; } }
 
 .icon {
   display: inline-block; }

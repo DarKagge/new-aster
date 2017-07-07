@@ -85,7 +85,7 @@ header{
 
 .head-menu{
   display: inline-block;
-  padding-left: 24.5px;
+  padding-left: 180.5px;
   height: 60px;
     li{
      float: left;
@@ -110,10 +110,49 @@ header{
       }
     }
   @if $adaptive == true {
-    @media (max-width: 1023px){
-      padding-left: 10px;
+    @media (max-width: 1179px){
+      padding-left: 170.5px;
     }
-    @media (max-width: 1003px){
+    @media (max-width: 1169px){
+      padding-left: 160.5px;
+    }
+    @media (max-width: 1159px){
+      padding-left: 150.5px;
+    }
+    @media (max-width: 1149px){
+      padding-left: 140.5px;
+    }
+    @media (max-width: 1139px){
+      padding-left: 130.5px;
+    }
+    @media (max-width: 1129px){
+      padding-left: 100.5px;
+    }
+    @media (max-width: 1099px){
+      padding-left: 80.5px;
+    }
+    @media (max-width: 1079px){
+      padding-left: 70.5px;
+    }
+    @media (max-width: 1069px){
+      padding-left: 60.5px;
+    }
+    @media (max-width: 1059px){
+      padding-left: 50.5px;
+    }
+    @media (max-width: 1049px){
+      padding-left: 40.5px;
+    }
+    @media (max-width: 1039px){
+      padding-left: 30.5px;
+    }
+    @media (max-width: 1029px){
+      padding-left: 20.5px;
+    }
+    @media (max-width: 1024px){
+      padding-left: 10.5px;
+    }
+    @media (max-width: 1009px){
       padding-left: 25px;
       a{
         padding: 26px 5px 23px 5px;
@@ -181,7 +220,7 @@ body .hamburger-inner::after{
   margin-top: 20px;
   display: inline-block;
   vertical-align: top;
-  margin-left: 49px;
+  margin-left: 0px;
   li{
     margin-bottom: 10px;
   }
@@ -197,6 +236,14 @@ body .hamburger-inner::after{
     font-weight: bold;
     line-height: 24px;
     padding-left: 14px;
+  }
+  @if $adaptive == true {
+    @media (max-width: 1024px){
+      margin-top: 20px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 49px;
+    }
   }
   @if $adaptive == true {
     @media (max-width: 991px){
@@ -285,7 +332,7 @@ body .hamburger-inner::after{
 
 .tticket{
   margin-top: 21px;
-  margin-right: 60px;
+  margin-right: 0px;
   a{
     display: block;
     border: 2px solid #ffb100;
@@ -312,6 +359,12 @@ body .hamburger-inner::after{
       width: 17px;
       height: 17px;
 
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1024px){
+      margin-top: 21px;
+      margin-right: 60px;
     }
   }
   @if $adaptive == true {
