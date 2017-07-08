@@ -478,7 +478,12 @@ $hamburger-layer-color: #fff;
 
 .organize{
   background-color: #f1f2f2;
-
+  background-image: url("../img/bg-org.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 45px;
+  border-bottom: 1px solid #e2e2e2;
   .title-go{
     position: relative;
     width: 100%;
@@ -524,6 +529,39 @@ $hamburger-layer-color: #fff;
     }
 
   }
+  @if $adaptive == true {
+    @media (max-width: 1095px){
+      .title-go{
+        h2{
+          &:after{
+            left: -8px;
+          }
+        }
+
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1025px){
+      .title-go{
+        br{
+          display: block;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      .title-go{
+        h2{
+          &:after{
+            left: -15x;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 
@@ -531,7 +569,39 @@ $hamburger-layer-color: #fff;
   text-align: center;
 }
 
+.left-org{
+  img{
+    padding-top: 70px;
+    width: 100%;
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      text-align: center;
+      img{
+        width: 70%;
+      }
+    }
+  }
+}
 
+
+.right-org{
+  text-align: center;
+  margin-top: 54px;
+  li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      li{
+        margin: 10px 10px;
+      }
+    }
+  }
+
+}
 
 //ALWAYS END
 @import "sketches.scss";
