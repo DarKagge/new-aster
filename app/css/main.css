@@ -192,6 +192,30 @@
       font-size: 32px;
       line-height: 32px; } }
 
+.title-go-all {
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  top: auto;
+  left: auto;
+  min-height: inherit;
+  background-image: none; }
+  .title-go-all h2 {
+    display: inline-block;
+    padding-top: 90px; }
+    .title-go-all h2:after {
+      top: 80px; }
+  @media (max-width: 810px) {
+    .title-go-all h2:after {
+      left: -9px; } }
+  @media (max-width: 802px) {
+    .title-go-all h2:after {
+      left: 55px; } }
+  @media (max-width: 656px) {
+    .title-go-all h2:after {
+      left: 0px; } }
+
 .items-go {
   height: 647px;
   margin-top: 68px;
@@ -520,6 +544,77 @@
   @media (max-width: 991px) {
     .right-org li {
       margin: 10px 10px; } }
+
+.vote-new {
+  text-align: center;
+  padding-bottom: 20px; }
+  .vote-new li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 35px 19px;
+    width: 29.8%;
+    text-align: left; }
+    .vote-new li .img-left-vote {
+      display: inline-block;
+      vertical-align: middle;
+      width: 19%;
+      text-align: center; }
+    .vote-new li:last-child {
+      width: 371px;
+      margin: 35px 0px;
+      margin-right: -40px; }
+  .vote-new p {
+    padding-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 25px;
+    color: #263139;
+    font-weight: 300;
+    text-align: left;
+    width: 79.8%; }
+  @media (max-width: 1177px) {
+    .vote-new li {
+      margin: 35px 10px; } }
+  @media (max-width: 1123px) {
+    .vote-new li {
+      width: 33%;
+      margin: 35px 0; }
+      .vote-new li p {
+        padding-left: 20px; }
+      .vote-new li br {
+        display: none; } }
+  @media (max-width: 997px) {
+    .vote-new li {
+      width: 32%;
+      margin: 35px 0; } }
+  @media (max-width: 966px) {
+    .vote-new li {
+      width: 254px;
+      margin: 35px 0; }
+      .vote-new li p {
+        width: 79.4%; }
+      .vote-new li br {
+        display: none !important; }
+      .vote-new li:last-child {
+        width: 254px;
+        margin: 35px 0; } }
+  @media (max-width: 799px) {
+    .vote-new li {
+      width: 300px;
+      margin: 35px 5px; }
+      .vote-new li br {
+        display: none !important; }
+      .vote-new li:last-child {
+        width: 300px;
+        margin: 35px 5px;
+        margin-right: 5px; } }
+
+.sm-br {
+  display: none; }
+  @media (max-width: 1024px) {
+    .sm-br {
+      display: block !important; } }
 
 .allert, .allert_tell {
   position: absolute;

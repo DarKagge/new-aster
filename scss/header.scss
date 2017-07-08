@@ -297,7 +297,7 @@ body .hamburger-inner::after{
     font-weight:bold;
     line-height: 16px;
     position: relative;
-    transition: 1.2s all;
+    transition: 0.2s all;
     &:hover{
       background-color: #ffb100;
     }
@@ -339,7 +339,7 @@ body .hamburger-inner::after{
     padding: 8px 0 9px 25px;
     text-align: center;
     width: 200px;
-    transition: 1.2s all;
+    transition: 0.2s all;
     color: #fff;
     border-radius: 40px;
     font-size: 12px;

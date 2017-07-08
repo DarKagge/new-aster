@@ -89,6 +89,51 @@ $hamburger-layer-color: #fff;
     }
   }
 }
+.title-go-all{
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  top: auto;
+  left: auto;
+  min-height: inherit;
+  background-image: none;
+  h2{
+    display: inline-block;
+    padding-top: 90px;
+    &:after{
+      top: 80px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 810px){
+      h2{
+        &:after{
+          left: -9px;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 802px){
+      h2{
+        &:after{
+          left: 55px;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 656px){
+      h2{
+        &:after{
+          left: 0px;
+        }
+      }
+    }
+  }
+
+}
 
 .items-go{
   height: 647px;
@@ -607,6 +652,114 @@ $hamburger-layer-color: #fff;
     }
   }
 
+}
+.vote-new{
+  text-align: center;
+  padding-bottom: 20px;
+  li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 35px 19px;
+    width: 29.8%;
+    text-align: left;
+    .img-left-vote{
+      display: inline-block;
+      vertical-align: middle;
+      width: 19%;
+      text-align: center;
+    }
+    &:last-child{
+      width: 371px;
+      margin: 35px 0px;
+      margin-right: -40px;
+      }
+    }
+    p{
+      padding-left: 10px;
+      vertical-align: middle;
+      display: inline-block;
+      font-size: 18px;
+      line-height: 25px;
+      color: #263139;
+      font-weight:300;
+      text-align: left;
+      width: 79.8%;
+    }
+  @if $adaptive == true {
+    @media (max-width: 1177px){
+      li{
+        margin: 35px 10px ;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1123px){
+      li{
+        width: 33%;
+        margin: 35px 0;
+        p{
+          padding-left: 20px;
+        }
+        br{
+          display: none;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 997px){
+      li{
+        width: 32%;
+        margin: 35px 0;
+
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 966px){
+      li{
+        width: 254px ;
+        margin: 35px 0;
+        p{
+          width: 79.4%;
+        }
+        br{
+          display: none !important;
+        }
+        &:last-child{
+          width: 254px;
+          margin: 35px 0;
+        }
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 799px){
+      li{
+        width: 300px ;
+        margin: 35px 5px;
+        br{
+          display: none !important;
+        }
+        &:last-child{
+          width: 300px;
+          margin: 35px 5px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.sm-br{
+  display: none;
+  @if $adaptive == true {
+    @media (max-width: 1024px){
+      display: block !important;
+    }
+  }
 }
 
 //ALWAYS END

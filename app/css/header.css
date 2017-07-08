@@ -245,8 +245,8 @@ body .hamburger-inner::after {
     font-weight: bold;
     line-height: 16px;
     position: relative;
-    -webkit-transition: 1.2s all;
-    transition: 1.2s all; }
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all; }
     .live-broadcasting a:hover {
       background-color: #ffb100; }
     .live-broadcasting a:after {
@@ -279,8 +279,8 @@ body .hamburger-inner::after {
     padding: 8px 0 9px 25px;
     text-align: center;
     width: 200px;
-    -webkit-transition: 1.2s all;
-    transition: 1.2s all;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
     color: #fff;
     -webkit-border-radius: 40px;
     border-radius: 40px;
