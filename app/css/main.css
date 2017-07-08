@@ -460,6 +460,10 @@
   background-size: cover;
   padding-bottom: 45px;
   border-bottom: 1px solid #e2e2e2; }
+  .organize .col-md-4 {
+    padding-left: 0; }
+  .organize .col-md-8 {
+    padding-right: 0; }
   .organize .title-go {
     position: relative;
     width: 100%;

@@ -484,6 +484,12 @@ $hamburger-layer-color: #fff;
   background-size: cover;
   padding-bottom: 45px;
   border-bottom: 1px solid #e2e2e2;
+  .col-md-4{
+    padding-left: 0;
+  }
+  .col-md-8{
+    padding-right: 0;
+  }
   .title-go{
     position: relative;
     width: 100%;
