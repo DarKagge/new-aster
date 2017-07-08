@@ -592,8 +592,11 @@
     .vote-new li {
       width: 254px;
       margin: 35px 0; }
+      .vote-new li .img-left-vote {
+        width: 23.8%; }
       .vote-new li p {
-        width: 79.4%; }
+        width: 74.7%;
+        padding-left: 2px; }
       .vote-new li br {
         display: none !important; }
       .vote-new li:last-child {

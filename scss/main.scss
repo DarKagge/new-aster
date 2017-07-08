@@ -720,8 +720,12 @@ $hamburger-layer-color: #fff;
       li{
         width: 254px ;
         margin: 35px 0;
+        .img-left-vote{
+          width: 23.8%;
+        }
         p{
-          width: 79.4%;
+          width: 74.7%;
+          padding-left: 2px;
         }
         br{
           display: none !important;
