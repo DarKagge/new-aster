@@ -1422,5 +1422,193 @@ $hamburger-layer-color: #fff;
 
   }
 }
+
+
+.feast{
+  .title-go{
+    text-align: left;
+  }
+  .slider-conf{
+    margin-top: 59px;
+  }
+  .arrow-slider{
+    bottom: 130px;
+    left: 403px;
+  }
+  .left-slider-text{
+    margin-top: 50px;
+    padding-left: 60px;
+    max-width: 500px;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: '';
+      left: 50px;
+      top: 24px;
+      width: 10px;
+      height: 188px;
+      background-color: #efa704;
+    }
+    p{
+      background-color: #f7f8f8;
+      margin-top: 0;
+      padding-bottom: 30px;
+      padding-left: 20px;
+      color: #7f8890;
+      letter-spacing: -0.8px;
+      &:first-child{
+        padding-top: 23px;
+      }
+    }
+    .border-bottom{
+      width: 90%;
+    }
+  }
+  .right-slider-img{
+    margin-top: 0;
+    img{
+      bottom: auto;
+      left: -20px;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1199px){
+      .title-go{
+        padding-left: 82px;
+        br{
+          display: block;
+        }
+      }
+      .left-slider-text{
+        background-color: transparent;
+        padding-left: 32px;
+        &:after{
+          left: 20px;
+        }
+      }
+      .right-slider-img{
+        img{
+          max-width: 530px;
+        }
+      }
+    }
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 1199px){
+      .title-go{
+        padding-left: 82px;
+        br{
+          display: block;
+        }
+      }
+      .left-slider-text{
+        background-color: transparent;
+        padding-left: 32px;
+        &:after{
+          left: 20px;
+        }
+      }
+      .right-slider-img{
+        img{
+          max-width: 530px;
+        }
+      }
+    }
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 1009px){
+      .right-slider-img{
+        img{
+          max-width: 490px;
+          left: auto;
+        }
+      }
+    }
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 991px){
+      .title-go{
+        padding-left: 82px;
+        br{
+          display: block;
+        }
+      }
+      .arrow-slider{
+        right: 0;
+        left: auto;
+        top: 95%;
+      }
+      .left-slider-text{
+        padding-left: 12px;
+        width: 98%;
+        max-width: inherit;
+        margin-left: 10px;
+        background-color: #f7f8f8;
+        min-height: 186px;
+        p{
+          background-color: transparent;
+          padding-left: 0;
+        }
+        &:after{
+          left: -10px;
+          top: 17px;
+          height: 169px;
+        }
+        &:before{
+          position: absolute;
+          width: 350px;
+          height: 10px;
+          content: '';
+          bottom: 0;
+          left: 0;
+          background-color: #f1a904;
+        }
+      }
+      .right-slider-img{
+        margin-top: 39px;
+        img{
+          max-width: inherit;
+          left: auto;
+        }
+      }
+    }
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 817px){
+      .left-slider-text{
+        &:after{
+          left: -10px;
+          top: 19px;
+          height: 169px;
+        }
+      }
+    }
+
+  }
+  @if $adaptive == true {
+    @media (max-width: 802px){
+      .title-go{
+        padding-left: 82px;
+        h2{
+          &:after{
+            left: -20px;
+          }
+        }
+        br{
+          display: block;
+        }
+      }
+      .slider-conf{
+        margin: 0 60px;
+      }
+    }
+
+  }
+
+}
 //ALWAYS END
 @import "sketches.scss";

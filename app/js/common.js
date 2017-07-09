@@ -136,3 +136,20 @@ $(document).on("click",function(event){
         e.preventDefault();
         autoplaySlider.goToNextSlide();
     });
+
+    var feast = $('#feast').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        pager:false,
+        controls:false,
+        loop:true,
+    });
+    $(".left-arrow a").on("click",function (e) {
+        e.preventDefault();
+        feast.goToPrevSlide();
+    });
+    $(".right-arrow a").on("click",function (e) {
+        e.preventDefault();
+        feast.goToNextSlide();
+    });
