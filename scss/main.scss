@@ -1878,7 +1878,6 @@ $hamburger-layer-color: #fff;
     }
   }
   .slider-conf-tree{
-
     .arrow-slider{
       top: 82%;
     }
@@ -1896,6 +1895,19 @@ $hamburger-layer-color: #fff;
 
       }
     }
+  }
+  @if $adaptive == true {
+    @media (max-width: 1138px){
+      .orange-bg{
+        margin-left: 12px;
+      }
+      .arrow-slider{
+        left: 12px;
+        width: 40%;
+        max-width: inherit;
+      }
+    }
+
   }
 }
 //ALWAYS END

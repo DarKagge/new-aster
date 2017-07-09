@@ -1400,6 +1400,14 @@
   padding-bottom: 10px;
   padding-top: 0; }
 
+@media (max-width: 1138px) {
+  .feast-in .orange-bg {
+    margin-left: 12px; }
+  .feast-in .arrow-slider {
+    left: 12px;
+    width: 40%;
+    max-width: inherit; } }
+
 .allert, .allert_tell {
   position: absolute;
   z-index: 20;
