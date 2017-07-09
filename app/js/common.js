@@ -116,3 +116,23 @@ $(document).on("click",function(event){
     $(".head-menu").removeClass('is-active');
     event.stopPropagation();
 });
+
+
+
+
+    var autoplaySlider = $('#adaptive').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        pager:false,
+        controls:false,
+        loop:true,
+    });
+    $(".left-arrow a").on("click",function (e) {
+        e.preventDefault();
+        autoplaySlider.goToPrevSlide();
+    });
+    $(".right-arrow a").on("click",function (e) {
+        e.preventDefault();
+        autoplaySlider.goToNextSlide();
+    });
