@@ -153,3 +153,64 @@ $(document).on("click",function(event){
         e.preventDefault();
         feast.goToNextSlide();
     });
+
+
+
+
+    var whereone = $('#where-one').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        pager:false,
+        controls:false,
+        loop:true,
+    });
+    $(".left-arrow a").on("click",function (e) {
+        e.preventDefault();
+        whereone.goToPrevSlide();
+    });
+    $(".right-arrow a").on("click",function (e) {
+        e.preventDefault();
+        whereone.goToNextSlide();
+    });
+
+
+
+
+
+    var wheretwo = $('#where-two').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        pager:false,
+        controls:false,
+        loop:true,
+    });
+    $(".left-arrow a").on("click",function (e) {
+        e.preventDefault();
+        wheretwo.goToPrevSlide();
+    });
+    $(".right-arrow a").on("click",function (e) {
+        e.preventDefault();
+        wheretwo.goToNextSlide();
+    });
+
+
+
+
+    var wheretree = $('#where-tree').lightSlider({
+        adaptiveHeight:true,
+        item:1,
+        slideMargin:0,
+        pager:false,
+        controls:false,
+        loop:true,
+    });
+    $(".left-arrow a").on("click",function (e) {
+        e.preventDefault();
+        wheretree.goToPrevSlide();
+    });
+    $(".right-arrow a").on("click",function (e) {
+        e.preventDefault();
+        wheretree.goToNextSlide();
+    });
