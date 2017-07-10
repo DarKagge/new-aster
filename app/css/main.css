@@ -214,7 +214,7 @@
       left: 55px; } }
   @media (max-width: 656px) {
     .title-go-all h2:after {
-      left: 0px; } }
+      left: -10px; } }
 
 .items-go {
   height: 647px;
@@ -1517,6 +1517,104 @@
     background-color: transparent; }
     .feast-in .orange-bg .left-slider-text {
       left: 0; } }
+
+.calendar {
+  padding: 30px 80px;
+  max-width: 580px;
+  margin: 0 auto;
+  border: 1px solid #dddddd;
+  -webkit-border-radius: 10px;
+  border-radius: 10px; }
+  .calendar h2 {
+    font-size: 24px;
+    color: #263139;
+    line-height: 24px;
+    font-weight: 300; }
+  .calendar label .first-l {
+    margin-right: 93px;
+    display: inline-block;
+    vertical-align: middle; }
+  .calendar label .radio {
+    display: none; }
+  .calendar label .checkbox-custom,
+  .calendar label .radio-custom {
+    width: 16px;
+    height: 16px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    position: relative;
+    background-color: #e9e9e9; }
+  .calendar label .checkbox-custom,
+  .calendar label .radio-custom,
+  .calendar label .label {
+    display: inline-block;
+    vertical-align: middle;
+    color: #7f8890;
+    margin-top: 20px;
+    position: relative; }
+  .calendar label .label {
+    padding-left: 24px; }
+    .calendar label .label:first-child {
+      margin-right: 10px; }
+  .calendar label .checkbox:checked + .checkbox-custom::before,
+  .calendar label .radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background-image: url("../img/radio.png");
+    background-position: center;
+    background-repeat: no-repeat; }
+  .calendar label .radio-custom,
+  .calendar label .radio:checked + .radio-custom::before {
+    -webkit-border-radius: 50%;
+    border-radius: 50%; }
+
+.week {
+  margin-top: 76px; }
+  .week .geen-buttons {
+    margin-top: 44px;
+    text-align: center; }
+
+.choice-week {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 67px; }
+  .choice-week label .checkbox-custom,
+  .choice-week label .radio-custom,
+  .choice-week label .label {
+    display: block; }
+  .choice-week label .radio-custom {
+    margin-bottom: 27px;
+    margin-top: 0; }
+
+.table {
+  margin-top: 22px;
+  padding-left: 5px;
+  display: inline-block;
+  vertical-align: top; }
+  .table tr:first-child td {
+    background-color: #f7f8f8;
+    border-top: none;
+    color: #ff8a00;
+    padding: 8px 10px 9px 0; }
+  .table tr:last-child td {
+    border-bottom: 1px solid #dddddd; }
+  .table tr td {
+    width: 56px;
+    text-align: right;
+    padding: 20px 10px 10px 0;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    border-left: 1px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    color: #31363f; }
+    .table tr td:last-child {
+      border-right: 1px solid #dddddd; }
 
 .allert, .allert_tell {
   position: absolute;
