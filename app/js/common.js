@@ -128,11 +128,11 @@ $(document).on("click",function(event){
         controls:false,
         loop:true,
     });
-    $(".left-arrow a").on("click",function (e) {
+    $(".left-arrow-r a").on("click",function (e) {
         e.preventDefault();
         autoplaySlider.goToPrevSlide();
     });
-    $(".right-arrow a").on("click",function (e) {
+    $(".right-arrow-r a").on("click",function (e) {
         e.preventDefault();
         autoplaySlider.goToNextSlide();
     });
@@ -149,11 +149,11 @@ $(document).on("click",function(event){
         controls:false,
         loop:true,
     });
-    $(".left-arrow a").on("click",function (e) {
+    $(".left-arrow-i a").on("click",function (e) {
         e.preventDefault();
         feast.goToPrevSlide();
     });
-    $(".right-arrow a").on("click",function (e) {
+    $(".right-arrow-i a").on("click",function (e) {
         e.preventDefault();
         feast.goToNextSlide();
     });
