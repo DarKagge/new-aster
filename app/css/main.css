@@ -211,7 +211,7 @@
       left: -9px; } }
   @media (max-width: 802px) {
     .title-go-all h2:after {
-      left: 55px; } }
+      left: -10px; } }
   @media (max-width: 656px) {
     .title-go-all h2:after {
       left: -10px; } }
@@ -1271,6 +1271,10 @@
 .where .title-go p {
   padding-top: 29px; }
 
+@media (max-width: 800px) {
+  .where .title-go p br {
+    display: block; } }
+
 .where-map {
   text-align: center;
   margin-top: 32px; }
@@ -1521,7 +1525,7 @@
 .calendar {
   padding: 30px 80px;
   max-width: 580px;
-  margin: 0 auto;
+  margin: 50px auto;
   border: 1px solid #dddddd;
   -webkit-border-radius: 10px;
   border-radius: 10px; }
