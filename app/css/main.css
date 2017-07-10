@@ -1576,6 +1576,27 @@
   .calendar label .radio:checked + .radio-custom::before {
     -webkit-border-radius: 50%;
     border-radius: 50%; }
+  @media (max-width: 799px) {
+    .calendar {
+      padding: 30px 15px;
+      text-align: center; } }
+  @media (max-width: 600px) {
+    .calendar {
+      padding: 30px 15px;
+      max-width: inherit; } }
+  @media (max-width: 479px) {
+    .calendar .table tr td {
+      width: 40px; } }
+  @media (max-width: 475px) {
+    .calendar label {
+      display: block; }
+      .calendar label .first-l {
+        margin-right: 0; }
+    .calendar .table tr td {
+      width: 40px; } }
+  @media (max-width: 367px) {
+    .calendar .table tr td {
+      width: 30px; } }
 
 .week {
   margin-top: 76px; }

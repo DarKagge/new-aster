@@ -2154,6 +2154,45 @@ $hamburger-layer-color: #fff;
       border-radius: 50%;
     }
   }
+  @if $adaptive == true {
+    @media (max-width: 799px){
+      padding: 30px 15px;
+      text-align: center;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 600px){
+      padding: 30px 15px;
+      max-width: inherit;
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 479px){
+      .table tr td{
+        width: 40px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 475px){
+      label{
+        display: block;
+        .first-l{
+          margin-right: 0;
+        }
+      }
+      .table tr td{
+        width: 40px;
+      }
+    }
+  }
+  @if $adaptive == true {
+    @media (max-width: 367px){
+      .table tr td{
+        width: 30px;
+      }
+    }
+  }
 }
 
 .week{
