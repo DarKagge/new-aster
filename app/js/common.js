@@ -137,6 +137,10 @@ $(document).on("click",function(event){
         autoplaySlider.goToNextSlide();
     });
 
+
+
+
+
     var feast = $('#feast').lightSlider({
         adaptiveHeight:true,
         item:1,
@@ -165,11 +169,11 @@ $(document).on("click",function(event){
         controls:false,
         loop:true,
     });
-    $(".left-arrow a").on("click",function (e) {
+    $(".left-arrow-one a").on("click",function (e) {
         e.preventDefault();
         whereone.goToPrevSlide();
     });
-    $(".right-arrow a").on("click",function (e) {
+    $(".right-arrow-one a").on("click",function (e) {
         e.preventDefault();
         whereone.goToNextSlide();
     });
@@ -186,11 +190,11 @@ $(document).on("click",function(event){
         controls:false,
         loop:true,
     });
-    $(".left-arrow a").on("click",function (e) {
+    $(".left-arrow-two a").on("click",function (e) {
         e.preventDefault();
         wheretwo.goToPrevSlide();
     });
-    $(".right-arrow a").on("click",function (e) {
+    $(".right-arrow-two a").on("click",function (e) {
         e.preventDefault();
         wheretwo.goToNextSlide();
     });
@@ -206,11 +210,11 @@ $(document).on("click",function(event){
         controls:false,
         loop:true,
     });
-    $(".left-arrow a").on("click",function (e) {
+    $(".left-arrow-tree a").on("click",function (e) {
         e.preventDefault();
         wheretree.goToPrevSlide();
     });
-    $(".right-arrow a").on("click",function (e) {
+    $(".right-arrow-tree a").on("click",function (e) {
         e.preventDefault();
         wheretree.goToNextSlide();
     });
