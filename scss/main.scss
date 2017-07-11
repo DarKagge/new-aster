@@ -2092,7 +2092,7 @@ $hamburger-layer-color: #fff;
 }
 
 
-.calendar{
+.calendar-in{
   padding: 30px 80px;
   max-width: 580px;
   margin: 50px auto;
@@ -2298,7 +2298,26 @@ $hamburger-layer-color: #fff;
       }
     }
   }
-
+  @if $adaptive == true {
+    @media (max-width: 1024px){
+      .left-map-nav{
+        img{
+          position: relative;
+          left: -134px;
+          width: initial;
+        }
+      }
+    }
+    @media (max-width: 890px){
+      .left-map-nav{
+        img{
+          position: relative;
+          left: -258px;
+          width: initial;
+        }
+      }
+    }
+  }
 }
 //ALWAYS END
 @import "sketches.scss";

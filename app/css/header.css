@@ -80,7 +80,9 @@ header {
     float: left; }
   .head-menu .active {
     border-bottom: 2px solid #ff8a00;
-    background-color: #282c33; }
+    background-color: #282c33;
+    -webkit-transition: 1s all;
+    transition: 1s all; }
   .head-menu a {
     display: block;
     font-size: 12px;
@@ -145,24 +147,30 @@ header {
       display: none;
       position: absolute;
       padding-left: 0;
-      left: 0;
+      left: -100%;
       top: 0;
       z-index: 69;
       background-color: #fff;
       max-width: 650px;
-      width: 100%; }
+      width: 100%;
+      -webkit-transition: 1s all;
+      transition: 1s all; }
       .head-menu .active {
         color: #fff; }
       .head-menu li {
         float: none;
         background-color: #fff; }
         .head-menu li a {
-          color: #000; }
+          color: #000;
+          padding-left: 20px; }
           .head-menu li a:hover {
             color: #fff; } }
 
 .head-menu.is-active {
-  display: block; }
+  display: block;
+  left: 0;
+  -webkit-transition: 1s all;
+  transition: 1s all; }
 
 body .hamburger-box {
   width: 25px; }
