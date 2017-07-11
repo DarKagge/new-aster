@@ -2256,5 +2256,49 @@ $hamburger-layer-color: #fff;
     }
   }
 }
+
+
+.navigate{
+  .left-map-nav{
+    width:50%;
+    float: left;
+    text-align: left;
+    img{
+      width: 100%;
+    }
+  }
+  .right-text-nav{
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+    .title-go{
+      text-align: left;
+    }
+    ul{
+      padding-top: 5px;
+    }
+    li{
+      margin-top: 10px;
+      padding-left: 38px;
+      p{
+        position: relative;
+        font-size:16px;
+        line-height: 24px;
+        color: #7f8890;
+        font-weight: 300;
+        &:after{
+          position: absolute;
+          left: -34px;
+          top: 5px;
+          content: '';
+          background-image: url("../img/green-check.png");
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+
+}
 //ALWAYS END
 @import "sketches.scss";
